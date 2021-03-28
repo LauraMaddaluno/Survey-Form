@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 id="title">SURVEY FORM</h1>
+    <em><p id="description">This is an example of a library survey form to improve its facilities </p></em>
+    <main id="main">
+        <form id="survey-form">
+        <label id="name-label" class="data" for="name">Name:</label><br>
+        <input type="text" id="name" placeholder="Please enter your name:" name="name" required><br>
+        <label id="email-label" class="data" for="email">E-mail:</label><br>
+        <input type="email" id="email" placeholder="Please enter your e-mail" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+        <label id="number-label" class="data" for="number">Age:</label><br>
+        <input type="number" id="number" placeholder="Age:" name="age" min="18" max="110"><br>
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" >
+        <option disabled selected value>"Select current role"</option>
+        <option id="student">Student</option>
+        <option id="full-time-job">Full time job </option>
+        <option id="part-time-job">Part-time job</option>
+        <option id="other">Other</option><br>
+        </select><br>
+        <p>Do you use the library, on average:</p>
+        <label> 
+            <input name="user-average" type="radio" value="less than once a month">less than once a month
+        </label><br>
+        <label> 
+            <input  name="user-average" type="radio" value="once a month" >once a month
+        </label><br>
+        <label> 
+            <input  name="user-average" type="radio" value="once every two weeks">once every two weeks
+        </label><br>
+        <label> 
+            <input name="user-average" type="radio" value="once a week">once a week 
+        </label><br>
+        <label> 
+            <input name="user-average" type="radio" value="two or three times a week">two or three times a week 
+        </label><br>
+        <label> 
+            <input  name="user-average" type="radio" value="daily">daily 
+        </label><br>
+        <p>Which library facilities do you use?</p>
+        <label> 
+            <input  class="user-facilities" type="checkbox" value="books">books
+        </label><br>
+        <label> 
+            <input  class="user-facilities" type="checkbox" value="music CDs">music CDs
+        </label><br>
+        <label> 
+            <input  class="user-facilities" type="checkbox" value="reference books">reference books/information (e.g. newspapers)
+        </label><br>
+        <label> 
+            <input  class="user-facilities" type="checkbox" value="computer">computer facilities
+        </label><br>
+        <p>Do you have any comments or suggestions?</p>
+        <textarea placeholder="Please enter your comment here..."></textarea><br>
+
+        <button id="submit">Submit</button>
+
+
+    </form>
+</main>
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+</body>
+</html>
